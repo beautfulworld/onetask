@@ -1,0 +1,13 @@
+@for $i from 1 through 80{
+
+@if $i % 2 == 0 or $i % 5 == 0{
+
+
+@each $short,$long in l left,r right,t top,b bottom{
+.m#{$short}#{$i}{
+margin-#{$long}:$i + rpx;
+}
+
+}
+}
+}
